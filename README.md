@@ -13,14 +13,13 @@ namespace Factorial
             int n = int.Parse(Console.ReadLine());
 
             int num = 1;
-            int a = 1;
 
-            for (int i = 1; i <= n; i++)
+            do
             {
-                num = a * i;
-                a = num;
-            }
-            Console.WriteLine(a);
+                num = num * n;
+                n--;
+            } while (n > 1);
+            Console.WriteLine(num);
         }
     }
 }
